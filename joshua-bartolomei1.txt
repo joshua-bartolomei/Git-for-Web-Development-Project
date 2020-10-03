@@ -1,0 +1,156 @@
+Git for Web Develoment Project
+
+	Codepen : https://codepen.io/Jbart87/pen/MWyNYeX
+
+	1. What is Semantic HTML? 
+    
+	clarity and meaning just by looking at the tags. whereas tags like <div> and <span> that don't necessarily hold meaning could land you lower on a search engine return.
+    
+	2. What is HTML used for? 
+
+	Formats the text, images, and other media that makeup a web page.
+    
+	3. What is an attribute and where do we put it? 
+    
+	n item we use when we want to include information that we don't displayed on the web page, such as href.
+
+	4. What is the h1 tag used for? How many times should I use it on a page?
+   
+	The <h1> tag labels the most important headline on the page and should only be used once because using multiple would lead to errors within the code and SEO.
+
+	5. Name two tags that have required attributes
+    
+	<img src=""/> and <a href=""/>
+
+	6. What do we put in the head of our HTML document? 
+         
+	 metadata, things we don't want displayed.   
+   	
+	7. What is an id? 
+         
+ 	 titles used for a single element.    
+	
+	 8. What elements can I add an id to? 
+    	
+          id is considered a global attrubute, and can be used  on any html element.
+
+ 	9. How many times can I use the same id on a page? 
+    	
+	id's should be used only once for a specific element, if you need an attribute to select multiple elements class is the way to go.
+	
+	10. What is a class? 
+		
+	specifies one or more classnames for an elemeny. Multiple elements can share a class name. Used for styling in css.
+    	
+	11. What elements can I add a class to? 
+    
+	similar to id it is considered a global attribute and can be used on any html element.
+	
+	12. How many times can I use the same class on a page? 
+    	
+	`Unlimited, but it isn't recommended
+
+	13. How do I get my link to open in a new tab?
+    	
+	using target="_blank" in your href link. <a href="https://www.google.com/' target="_blank">google.com</a>
+	
+	14. What is the alt attribute in the image tag used for? 
+    
+	Specifies alternate text for an image if the image cannot be loaded or displayed.
+	
+	15. How do I reference an id?
+    	   #id{}
+	
+	16. What is the difference between a section and a div
+     	
+	section means the content inside is gropuped and relates to a single theme, whereas div doesn't convey any meaning and relies on its class, lang and title attributes for meaning.
+	
+	17. What is CSS used for? 
+          
+	to style html pages. If we had no css most web pages would be pretty bland.
+	
+	18. How do we select an element? Example - every h2 on the page
+    	    
+	    .h2{}
+	
+	19. What is the difference between a class and an id? - Give me an example of when I might use each one
+    	
+	class can be used to style multiple elements, whereas id is more specific and unique. if you have mutiple elements you'd like to style similarly class is your best option, Id is something more specific and unique. that's why there tends to only be 1 id specific to that element.
+	
+	20. How do we select classes in CSS?
+    	
+	.classname{}
+	
+	21. How do we select a p element with a single class of “human””?
+        
+	.phuman
+
+	22. What is a parent child selector? When would this be useful? 
+
+    	
+	23. How do you select all links within a div with the class of sidebar?
+    
+
+	24. What is a pseudo selector?
+    	
+	selects elements that are in a specifit state
+
+	25. What do we use the change the spacing between lines?
+    	 
+	line-height
+
+	26. What do we use to change the spacing between letters?
+
+         letter-spacing
+
+	27. What do we use to to change everything to CAPITALS? lowercase? Capitalize?
+   	
+	text-transform: uppercase; text-transform: lowercase; text-transform: capitalize;
+	 
+	28. How do I add a 1px border around my div that is dotted and black?
+    
+	
+	border:1px dotted #000000;
+	
+	
+	29. How do I select everything on the page? 
+    		
+	          *
+	
+	30. How do I write a comment in CSS?
+    		
+         /* you write a comment like this */
+	
+	31. How do I find out what file I am in, when I am using the command line? 
+             
+	        pwd
+	
+	32. Using the command line - how do I see a list of files/folders in my current folder?
+          
+	          ls
+	
+	33. How do I remove a file via the command line? Why do I have to be careful with this? 
+    
+         git rm, but you have to be careful because you can do serious damage to your computer. Any file you delete using this command is deleted from the filesystem altogether.
+	
+	34. Why should I use version control? 
+    
+	it helps to protect the source code of your project. If there were some bugs to come up you could turn back to an earlier version without disturbing others progress.
+	
+	35. How often should I commit to github?
+    
+	whenever you have a new feature that's worth commiting, we don't want o overload our changes, but whenever it's meaninful it's advised.
+                 
+	36. What is the command we would use to push our repo up to github? 
+    	
+	git push -u origin joshua-bartolmei
+	
+	37. Walk me through Lambda's git flow. 
+
+	1. First we fork the project we're working on so we don't modify the original file for other students.
+	2. we can add a collaborator if we choose to, so they can give us feedback on our commits.
+	3. then we clone a copy of the repo  to work with on our computer
+	4. we checkout a branch and name it using our name as follows 'joshua-bartolomei'
+	5. we complete our assignment on our computer and make sure to commit our work regularly.
+	6. push the changes we made locally to the remote branch.
+	7. make a pull request using our student branch aginst the fork we created in the beginning and then we submit it in canvas.
